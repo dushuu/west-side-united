@@ -1,0 +1,54 @@
+<section class="py-4 mainsec">
+  <div class="container my-container">
+    <div class="text-left">
+      <h1 class="">Summer Internship Programs</h1>
+    </div>
+    <div class="row align-items-center mt-5">
+      <table>
+        <tr *ngFor="let program of internshipPrograms">
+          <td>{{ program }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="pt-5 pb-5 bg-primary" id="newsandevents">
+  <div class="container my-container">
+    <div class="text-center"></div>
+    <div class="row mt-5">
+      <div class="col-md-6 pe-md-5">
+        <h2 class="text-white">News and Events</h2>
+        <ul class="list-unstyled text-white option">
+          <li class="text-white">
+            <a
+              class="text-white"
+              href="https://westsideunited.org/2024/05/31/register-now-for-the-west-side-united-2024-annual-community-convening/"
+              >Register Now for the West Side United 2024 Annual Community
+              Convening</a
+            >
+            <span class="post-date">May 31, 2024</span>
+          </li>
+          <li>
+            <a
+              class="text-white"
+              href="https://westsideunited.org/2024/03/22/unlock-your-future-with-wsus-retail-workforce-development-internship-program/"
+              >Unlock Your Future with WSU’s Retail Workforce Development
+              Internship Program</a
+            >
+            <span class="post-date">March 22, 2024</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 pe-md-5">
+        <h2 class="text-white">Subscribe to Our Newsletter</h2>
+        <p class="text-white">Receive updates about WSU news and events.</p>
+        <button
+          class="btn bg-white px-4 py-2 text-primary text-uppercase fw-bold rounded"
+        >
+          Subscribe Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

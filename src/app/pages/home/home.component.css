@@ -1,0 +1,23 @@
+/* .new-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  .new-section h2 {
+    margin-top: 0;
+  }
+   */
+   .bg-primary{
+    background-color: #003970 !important;
+  }
+  .text-primary {
+    color: #003970 !important;
+  }
+  /* .btn {
+    --bs-btn-font-family: var(--heading-font);
+
+  } */
+  .rounded{
+    border-radius: 70px !important;
+  }

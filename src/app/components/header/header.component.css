@@ -1,0 +1,28 @@
+
+   .bg-primary{
+    background-color: #003970 !important;
+  }
+  .text-primary {
+    color: #003970 !important;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 60px;
+    transition: all 0.3s ease-in;
+    --bs-btn-color: var(--light-color);
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #46ad76;
+    --bs-btn-hover-border-color: #46ad76;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--light-color);
+    --bs-btn-active-bg: var(--primary-color);
+    --bs-btn-active-border-color: var(--primary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--light-color);
+    --bs-btn-disabled-bg: #d3d7dd;
+    --bs-btn-disabled-border-color: var(--primary-color);
+  }

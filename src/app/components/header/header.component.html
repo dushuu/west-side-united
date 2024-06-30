@@ -1,0 +1,529 @@
+<nav class="main-menu d-flex navbar navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 navfix">
+    <div class="container-fluid">
+      <div class="main-logo d-lg-none">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="logo" class="logo" />
+        </a>
+      </div>
+  
+      <button
+        class="navbar-toggler shadow-none btn-primary bg-primary text-white py-2"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        MENU
+      </button>
+  
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header mt-3 sr-only">
+          <button
+            type="button"
+            class="btn-close shadow-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+  
+        <div class="offcanvas-body justify-content-between">
+          <div class="main-logo">
+            <a href="/">
+              <img src="assets/images/logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+  
+          <ul class="navbar-nav menu-list list-unstyled align-items-lg-center d-flex mb-0">
+            <li class="nav-item">
+              <a href="" class="nav-link mx-2 active">Home</a>
+            </li>
+
+          <li
+            class="nav-item dropdown"
+            (mouseenter)="toggleDropdown(true)"
+            (mouseleave)="toggleDropdown(false)"
+          >
+            <a
+              class="nav-link mx-2 dropdown-toggle align-items-center"
+              role="button"
+              id="pages"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About Us
+            </a>
+            <ul class="dropdown-menu show" *ngIf="isDropdownOpen">
+              <li class="mega-menu-row">
+                <ul class="mega-sub-menu">
+                  <li
+                    class="mega-menu-column mega-menu-columns-4-of-12"
+                    id="mega-menu-38-0-0"
+                  >
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Our Mission</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Our Team<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#">Leadership</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Program and Operations Staff</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column" id="mega-menu-38-0-1">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Executive Leadership Council</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a class="mega-menu-link text-uppercase fw-bold" href=""
+                          >Community Advisory Council<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#">Members</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="">Alumni</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Our Partners</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Contact Us</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a class="mega-menu-link text-uppercase fw-bold" href=""
+                          >FAQs</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="nav-item dropdown"
+            (mouseenter)="toggleImapactDropdown(true)"
+            (mouseleave)="toggleImapactDropdown(false)"
+            data-bs-toggle="dropdown"
+          >
+            <a
+              class="nav-link mx-2 dropdown-toggle align-items-center"
+              role="button"
+              id="courses"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Our Impact</a
+            >
+            <ul
+              class="dropdown-menu show"
+              aria-labelledby="pages"
+              *ngIf="isOurImapactDropdown"
+            >
+              <li class="mega-menu-row" id="mega-menu-38-0">
+                <ul class="mega-sub-menu">
+                  <li
+                    class="mega-menu-column mega-menu-columns-4-of-12"
+                    id="mega-menu-38-0-0"
+                  >
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >IMPACT AREAS<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#"
+                              >Economic Vitality</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="">Education</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Health & Healthcare</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Neighborhood & Physical Environment</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >LIVE HEALTHY CHICAGO PROGRAM</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >WEST SIDE HEALTHY PARENTS AND BABIES (WSHPB)
+                          PROGRAM</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column" id="mega-menu-38-0-1">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >METRICS DASHBOARD</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >MEASUREMENT FRAMEWORK</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >COMMUNITY IMPACT REPORTS</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="nav-item dropdown"
+            (mouseenter)="toggleGetInvolvedDropdown(true)"
+            (mouseleave)="toggleGetInvolvedDropdown(false)"
+          >
+            <a
+              class="nav-link mx-2 dropdown-toggle align-items-center"
+              role="button"
+              id="events"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Get Involved</a
+            >
+            <ul class="dropdown-menu show" aria-labelledby="pages" *ngIf="isGetInvolvedDropdown">
+              <li class="mega-menu-row" id="mega-menu-38-0">
+                <ul class="mega-sub-menu">
+                  <li class="mega-menu-column">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >APPLY FOR A GRANT<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#"
+                              >2023 Small Business Grant</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Information Sessions</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Frequently Asked Questions</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column">
+                    <ul>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >FIND AN INTERNSHIP<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#"
+                              >Summer Internship Programs</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >School-Year Internship Programs</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column">
+                    <ul>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >JOIN OUR TEAM</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown"   (mouseenter)="toggleNewzDropDown(true)"
+          (mouseleave)="toggleNewzDropDown(false)">
+            <a
+              class="nav-link mx-2 dropdown-toggle align-items-center"
+              role="button"
+              id="blog"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >News and Events</a
+            >
+            <ul class="dropdown-menu show" aria-labelledby="pages" *ngIf="isNewzDropDown">
+              <li class="mega-menu-row">
+                <ul class="mega-sub-menu">
+                  <li class="mega-menu-column mega-menu-columns-4-of-12">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >COVID-19 RESOURCES<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                        <ul class="mega-sub-menu">
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="#"
+                              >COVID-19 Testing Resources</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Chicago and Illinois Resources</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >National US Resources</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Education Resources</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href="">Food Resources</a>
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Health Resources</a
+                            >
+                          </li>
+                          <li class="mega-menu-item">
+                            <a class="mega-menu-link" href=""
+                              >Small Business Resources</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >RERR RESPONSE TO THE BREONNA TAYLOR CASE
+                          DECISION<span
+                            class="mega-indicator"
+                            data-has-click-event="true"
+                          ></span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mega-menu-column" id="mega-menu-38-0-1">
+                    <ul class="mega-sub-menu">
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >UPCOMING EVENTS</a
+                        >
+                        <div class="textwidget">
+                          <p>
+                            <iframe
+                              style="border-width: 0"
+                              src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;src=Y19lam5sdThhMGk5azZlZHBsZzQ0bDdhaDZma0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB"
+                              frameborder="0"
+                              scrolling="no"
+                            ></iframe>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >SUBSCRIBE TO OUR NEWSLETTER</a
+                        >
+                      </li>
+                      <li class="mega-menu-item">
+                        <a
+                          class="mega-menu-link text-uppercase fw-bold"
+                          href="#"
+                          >Newsletter Archive</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="ms-3">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ms-3">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ms-3">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="ms-3"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasSearch"
+            >
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid d-lg-none">
+    <div class="d-flex align-items-end mt-3">
+      <ul class="d-flex align-items-center list-unstyled m-0">
+        <li>
+          <a href="account.html" class="me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px">
+              <use href="#user-circle" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html" class="me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px">
+              <use href="#heart" />
+            </svg>
+          </a>
+        </li>
+        <li class="">
+          <a
+            href="#"
+            class="me-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasCart"
+            aria-controls="offcanvasCart"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px">
+              <use href="#shopping-bag" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="me-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSearch"
+            aria-controls="offcanvasSearch"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px">
+              <use href="#search" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
